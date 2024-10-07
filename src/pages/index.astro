@@ -1,15 +1,18 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
+	<article class="grid place-items-center mx-auto container pt-8 prose text-blackish" style="font-family: Helvetica, sans-serif;">
+	  <div class="mx-auto text-center">
+		<h1 class="text-2xl font-bold">GENNEMSNITSALDEREN FOR FØRSTEGANGSFORÆLDRE ER STEGET</h1>
+		<h3 class="text-xl pt-5">Stigende forældrealdre: En tendens mod senere familiedannelse mellem 1960 og 2022</h3>
+		<img src="/parentstats.svg" alt="Forældrestatistik" class="w-[60%] pt-10 mx-auto">
+	  </div>
+	  <div class="mx-auto ">
+		<p class="text-lg max-w-[600px] pt-10 leading-7">Mellem 1960 og 2022 er gennemsnitsalderen for førstegangsfødende kvinder steget fra 23,1 år til 29,9 år, mens gennemsnitsalderen for alle fødende kvinder er gået op fra 27 år til 31,4 år. Fædres gennemsnitsalder er også steget i samme periode, fra omkring 28,4 år i 1980'erne til 33,5 år i 2022. Denne udvikling afspejler en tendens, hvor både kvinder og mænd i stigende grad venter længere, før de får børn.</p>
+	  </div>
 	</article>
-</MainLayout>
+  </MainLayout>
+  
+  
+
